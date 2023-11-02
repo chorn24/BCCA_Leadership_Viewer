@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="_">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">  
+        <title>BCCA team viewer</title>
+        <link rel="icon" type="image/x-icon" href="https://basecampcodingacademy.org/wp-content/uploads/2020/12/footer_logo_1000.png">
+        <link rel="stylesheet" href="{% static "my_styles.css" %}">
+    </head>
+    <header class="_Header">
+        <a href="{% url "home" %}"><button class="Home_Button">Home</button></a>
+    </header>
+    <br><br><br>
+        {% block content %}{% endblock content %}
+        </div>
+        </div>
+    </body>
+</html>

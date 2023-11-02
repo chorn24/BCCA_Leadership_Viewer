@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <body class="gradient  _">
+        <br><br>
+        <div class="spawn_room">
+        <h1><a href="{% url "manage" %}" class="Man">Management</a></h1>
+        <h1><a href="{% url "commune" %}" class="Com">Community</a></h1>
+        <h1><a href="{% url "document" %}" class="Doc">Documentation</a></h1>
+        <h1><a href="{% url "procure" %}" class="Pro">Procurement</a></h1>
+        </div>
+    </body>
+</html>
+{% endblock content%}
+
+<!--
+    <h1>Management</h1>
+        <h1>Community</h1>
+        <h1>Documentation</h1>
+        <h1>Procurement</h1>
+-->

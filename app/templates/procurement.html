@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<body class="Procurement _">
+    <div class="Procurement_Div">
+    <h1>{{Team.Name}}</h1>
+    <p>{{Team.Description}}</p>
+    <div class="Procurement_Div2">
+    {% for names in Team.Team_Members %}
+    <p>{{names}}<p>
+    {% endfor %}
+{% endblock content %}
