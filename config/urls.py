@@ -18,18 +18,18 @@ from django.contrib import admin
 from django.urls import path
 
 from app.views import (
-    show_management,
-    show_community,
-    show_documentation,
-    show_procurement,
+    show_info,
     show_team_names,
 )
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("management", show_management, name="manage"),
-    path("community", show_community, name="commune"),
-    path("documentation", show_documentation, name="document"),
-    path("procurement", show_procurement, name="procure"),
+    path("teams/<team_name>", show_info, name="Info"),
     path("", show_team_names, name="home"),
 ]
+
+
+# path("management", show_management, name="manage"),
+# path("community", show_community, name="commune"),
+# path("documentation", show_documentation, name="document"),
+# path("procurement", show_procurement, name="procure"),
